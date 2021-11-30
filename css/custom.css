@@ -1,0 +1,516 @@
+:root {
+  --primary-color1: #edaab6;
+}
+/** ADD YOUR AWESOME CODES HERE **/
+.navbar-brand > img {
+  display: inline;
+  width: 50px;
+  margin-right: 10px;
+}
+.navbar-brand > span {
+  font-size: 21px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.section-title h3 {
+  font-family: monospace;
+}
+.widget-title-img {
+  margin-bottom: 30px;
+  width: 40px;
+}
+
+.post-media .img-fix {
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+  transition: transform ease-in 0.5s;
+  will-change: transform;
+}
+.post-media .img-fix:hover {
+  transform: scale(1.1);
+  transition: ease 0.9;
+}
+/* responsive */
+@media (max-width: 1000px) {
+  .header_style_01 {
+    background-color: rgba(209, 189, 189, 0.705);
+  }
+}
+
+@media (max-width: 768px) {
+  .row .bailab {
+    display: block;
+  }
+  .col-sm-12 {
+    float: none;
+    width: 100%;
+  }
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+    right: 0;
+    left: 0;
+  }
+  .message-box .img-gif1 {
+    height: 22px;
+  }
+  .message-box .img-gif2 {
+    height: 28px;
+  }
+  #canvas {
+    padding: 0 0 60px 0;
+    height: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .modal .form-structor::after {
+    background-position: right bottom;
+    background-size: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-sm-6 {
+    padding-bottom: 120px;
+    margin-bottom: 20px;
+  }
+}
+/* Modal */
+@media (max-width: 700px) {
+  .modal .form-structor {
+    width: 390px;
+  }
+}
+@keyframes modalFadeIn {
+  from {
+    opacity: 40%;
+    transform: scale(0);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  --grow-from: 0.5;
+  --grow-to: 1;
+  animation: grow cubic-bezier(0.12, 0.63, 0.49, 1.01) 0.2s;
+}
+.login-group-checkbox {
+  padding: 5px 0;
+  margin-left: 5px;
+}
+.modal.open {
+  display: block;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  z-index: 111;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+/* form sign */
+.login a {
+  text-decoration: none;
+  color: #000;
+}
+.login a:hover {
+  color: rgb(240, 123, 123);
+}
+.form-structor {
+  background-color: #222;
+  border-radius: 15px;
+  height: 550px;
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  z-index: 111;
+  margin-top: 90px;
+  animation: modalFadeIn ease 0.5s;
+}
+.form-structor::after {
+  content: "";
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 600px;
+  background-image: url("/WebPiano/images/dangnhap/anime-girl-playing-piano.jpg");
+}
+.form-structor .signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  width: 65%;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .signup.slide-up {
+  top: 5%;
+  -webkit-transform: translate(-50%, 0%);
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .signup.slide-up .form-holder,
+.form-structor .signup.slide-up .submit-btn {
+  opacity: 0;
+  visibility: hidden;
+}
+.form-structor .signup.slide-up .form-title {
+  font-size: 1em;
+  cursor: pointer;
+}
+.form-structor .signup.slide-up .form-title span {
+  margin-right: 5px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .signup .form-title {
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+}
+.form-structor .signup .form-title span {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .signup .form-holder {
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  margin-top: 50px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .signup .form-holder .signup__input {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 25px 15px;
+  border-bottom: 2px solid rgb(161, 161, 161);
+  width: 100%;
+  font-size: 12px;
+}
+.form-structor .signup .form-holder .signup__input:focus {
+  font-size: 15px;
+  box-shadow: rgb(240, 123, 123);
+}
+.form-structor .signup .form-holder .signup__input:last-child {
+  border-bottom: 0;
+}
+.form-structor .signup .form-holder .signup__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.form-structor .signup .submit-btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(256, 256, 256, 0.7);
+  border: 0;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .signup .submit-btn:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(199, 135, 135, 0.8);
+}
+.form-structor .login {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color1);
+  z-index: 5;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  -webkit-transform: translate(-50%, 0);
+  background-color: var(--primary-color1);
+  width: 200%;
+  height: 250px;
+  border-radius: 50%;
+  z-index: 4;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login .center {
+  position: absolute;
+  top: calc(50% - 10%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  width: 65%;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login .center .form-title {
+  color: #000;
+  font-size: 1.7em;
+  text-align: center;
+}
+.form-structor .login .center .form-title span {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login .center .form-holder {
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-top: 50px;
+
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login .center .form-holder .signup__input {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 30px 15px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-size: 12px;
+}
+.form-structor .login .center .form-holder .signup__input:last-child {
+  border-bottom: 0;
+}
+.form-structor
+  .login
+  .center
+  .form-holder
+  .signup__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.form-structor .login .center .submit-btn {
+  background-color: #9c9c9c;
+  color: rgba(256, 256, 256, 0.7);
+  border: 0;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login .center .submit-btn:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(221, 105, 105, 0.8);
+}
+.form-structor .login.slide-up {
+  top: 90%;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login.slide-up .center {
+  top: 10%;
+  -webkit-transform: translate(-50%, 0%);
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login.slide-up .form-holder,
+.form-structor .login.slide-up .submit-btn {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login.slide-up .form-title {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+}
+.form-structor .login.slide-up .form-title span {
+  margin-right: 5px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+
+/* SNOW */
+.snow-container {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  z-index: 99999;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+}
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+  animation: snow linear infinite;
+}
+.snow.foreground {
+  background-image: url("https://itexpress.vn/API/files/img/snow-medium.png");
+  -webkit-animation-duration: 15s;
+  animation-duration: 10s;
+}
+.snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+.snow.middleground {
+  background-image: url(https://itexpress.vn/API/files/img/snow-medium.png);
+  -webkit-animation-duration: 20s;
+  animation-duration: 15s;
+}
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.snow.background {
+  background-image: url(https://itexpress.vn/API/files/img/snow-medium.png);
+  -webkit-animation-duration: 25s;
+  animation-duration: 20s;
+}
+.snow.background.layered {
+  -webkit-animation-delay: 12.5s;
+  animation-delay: 12.5s;
+}
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(5%, 100%, 0);
+    transform: translate3d(5%, 100%, 0);
+  }
+}
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(5%, 100%, 0);
+    transform: translate3d(5%, 100%, 0);
+  }
+}
+/* img */
+.img-perspective1 {
+  transform: perspective(2000px) rotateY(25deg) scale(0.9) rotateX(20deg);
+  filter: blur(1px);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  opacity: 0.8;
+  transition: 0.6s ease all;
+}
+.img-perspective1:hover {
+  transform: perspective(800px) rotateY(-10deg) translateY(-30px) rotateX(10deg)
+    scale(1);
+  filter: blur(0);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.5),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.5);
+  opacity: 1;
+}
+.img-perspective2 {
+  transform: perspective(2000px) rotateY(-20deg) scale(0.9) rotateX(20deg);
+  filter: blur(1px);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  opacity: 0.8;
+  transition: 0.6s ease all;
+}
+.img-perspective2:hover {
+  transform: perspective(800px) rotateY(15deg) translateY(-30px) rotateX(10deg)
+    scale(1);
+  filter: blur(0);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.5),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.5);
+  opacity: 1;
+}
+
+/* lab */
+.bailab {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 15px;
+}
+.bailab h3 {
+  color: #f44336;
+  font-size: 32px;
+}
+.bailab a {
+  text-decoration: none;
+  color: #160b0a;
+}
+.bailab a:hover {
+  color: violet;
+  font-size: 16px;
+}

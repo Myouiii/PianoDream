@@ -1,0 +1,98 @@
+body {
+  background-image: url(/WebPiano/bailap/lab6/images/bg.jpg);
+}
+#nentrang {
+  width: 960px;
+  height: 600px;
+  background-color: white;
+  margin: auto;
+}
+#banner {
+  background-image: url(/WebPiano/bailap/lab6/images/header.jpg);
+  height: 240px;
+  width: 920px;
+  margin: auto;
+  margin-bottom: -20px;
+}
+#menu {
+  height: 51px;
+  width: 920px;
+  margin: auto;
+  background-color: #212226;
+}
+#menu li {
+  width: 145px;
+  list-style-type: none;
+  float: left;
+  line-height: 51px;
+}
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+#menu li a:hover {
+  color: #00c6ff;
+}
+#main {
+  height: 240px;
+}
+#left {
+  width: 200px;
+  height: 240px;
+  margin-left: 20px;
+  background-color: #fff;
+  float: left;
+  clear: left;
+}
+#left a {
+  margin-left: 10px;
+}
+#left-list {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+#title {
+  text-align: center;
+  line-height: 35px;
+  background-color: #324203;
+  color: #fff;
+  height: 35px;
+  list-style-type: none;
+  padding-right: 40px;
+}
+.list {
+  list-style-type: none;
+  padding-left: 5px;
+  line-height: 40px;
+  background-image: url(/WebPiano/bailap/lab6/images/menu_bg.jpg);
+  border-top: 1px solid white;
+  color: #fff;
+  height: 40px;
+}
+.list a {
+  text-decoration: none;
+  color: #fff;
+}
+.list a:hover {
+  color: #00c6ff;
+}
+#right {
+  color: rgba(0, 119, 255, 0.877);
+  text-align: center;
+  height: 240px;
+  width: 720px;
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+#footer {
+  text-align: center;
+  background-color: #384d00;
+  color: #999;
+  height: 40px;
+  width: 920px;
+  margin: auto;
+  line-height: 40px;
+}
